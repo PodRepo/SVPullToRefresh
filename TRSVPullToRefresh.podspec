@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'TRSVPullToRefresh'
-  s.version  = '0.4.2'
+  s.version  = '0.4.3'
   s.platform = :ios, '7.0'
   s.license  = 'MIT'
   s.summary  = 'Give pull-to-refresh to any UIScrollView with 1 line of code.'
@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
                   'method as well as a pullToRefreshView property.'
 
   s.frameworks   = 'QuartzCore'
+  s.dependency 'KVOController', '1.0.3'
   s.source_files = 'SVPullToRefresh/*.{h,m}'
   s.preserve_paths  = 'Demo'
   s.requires_arc = true
